@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - deMed Medical Center</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1a6e5e;
+      --primary-light: #e8f5f2;
+      --primary-mid: #2a9d87;
+      --accent: #e8734a;
+      --dark: #0f1c1a;
+      --text-muted: #6b7a78;
+      --border: #e2eae8;
+      --white: #ffffff;
+      --surface: #f7faf9;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--white); }
+    
+    .navbar-top-bar { background: var(--primary); padding: 8px 0; font-size: 13px; color: rgba(255,255,255,0.85); }
+    .navbar-top-bar a { color: rgba(255,255,255,0.85); text-decoration: none; }
+    .main-navbar { background: var(--white); height: 80px; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+    .navbar-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand-icon { width: 40px; height: 40px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; }
+    .brand-text strong { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--primary); }
+    .brand-text span { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+    .nav-link-custom { font-size: 14px; font-weight: 500; color: var(--dark) !important; padding: 8px 14px !important; border-radius: 8px; }
+    .nav-link-custom:hover { color: var(--primary) !important; background: var(--primary-light); }
+    .dropdown-menu-custom { border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 32px rgba(15,28,26,.1); padding: 8px; }
+    .dropdown-item { font-size: 13.5px; border-radius: 8px; padding: 9px 14px; }
+    .dropdown-item:hover { background: var(--primary-light); color: var(--primary); }
+    .nav-cta-login { color: var(--primary) !important; border: 1.5px solid var(--primary); border-radius: 8px; padding: 8px 20px !important; text-decoration: none; }
+    .nav-cta-signup { background: var(--primary); color: #fff !important; border-radius: 8px; padding: 9px 22px !important; text-decoration: none; }
+    
+    .page-header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%); color: white; padding: 80px 0; margin-top: 76px; }
+    .page-title { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; font-family: 'Playfair Display', serif; }
+    .about-card { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); height: 100%; transition: transform 0.3s ease; }
+    .about-card:hover { transform: translateY(-5px); }
+    .milestone-item { text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 15px; }
+    .milestone-number { font-size: 2.5rem; font-weight: 700; color: var(--primary); }
+    .team-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+    .team-card:hover { transform: translateY(-5px); }
+    .team-img { width: 100%; height: 280px; object-fit: cover; }
+    .team-info { padding: 1.5rem; text-align: center; }
+    .footer { background: var(--dark); color: var(--text-muted); padding: 60px 0 30px; margin-top: 60px; }
+    @media (max-width: 768px) { .page-title { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+
+<div class="navbar-top-bar">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap:8px;">
+      <div><i class="bi bi-telephone-fill"></i> Emergency: <a href="tel:+18000000000"><strong>+1 800 000 0000</strong></a></div>
+      <div><i class="bi bi-geo-alt-fill"></i> 123 Health Ave, Medical City, NY 10001</div>
+    </div>
+  </div>
+</div>
+
+<nav class="main-navbar">
+  <div class="container h-100 d-flex align-items-center">
+    <a class="navbar-brand me-auto" href="../index.html">
+      <div class="brand-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+      <div class="brand-text"><strong>deMed</strong><span>Medical Center</span></div>
+    </a>
+    <button class="navbar-toggler border-0 ms-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <i class="bi bi-list" style="font-size:26px;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li><a class="nav-link nav-link-custom" href="../index.html">Home</a></li>
+        <li><a class="nav-link nav-link-custom active" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="medical-checkup.html">Medical Checkup</a></li>
+            <li><a class="dropdown-item" href="emergency-care.html">Emergency Care</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+            <li><a class="dropdown-item" href="doctors-staff.html">Doctors & Staff</a></li>
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+        <a href="#" class="nav-cta-login">Log in</a>
+        <a href="#" class="nav-cta-signup">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container text-center">
+    <h1 class="page-title">About deMed Medical Center</h1>
+    <p class="lead">Excellence in healthcare since 1995</p>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row align-items-center g-5">
+    <div class="col-lg-6">
+      <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=450&fit=crop" alt="deMed Medical Center" class="img-fluid rounded-4 shadow">
+    </div>
+    <div class="col-lg-6">
+      <h2>Our Story</h2>
+      <p>Founded in 1995, deMed Medical Center has grown from a small clinic to a premier healthcare facility serving thousands of patients annually. Our commitment to excellence and compassionate care has made us a trusted name in the community.</p>
+      <p>We combine cutting-edge medical technology with a patient-centered approach to deliver the highest quality healthcare services. Our multidisciplinary team of specialists works together to ensure comprehensive care for every patient.</p>
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="milestone-item">
+            <div class="milestone-number">30+</div>
+            <div>Years of Excellence</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="milestone-item">
+            <div class="milestone-number">200+</div>
+            <div>Expert Doctors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5 g-4">
+    <div class="col-md-4">
+      <div class="about-card text-center">
+        <i class="bi bi-eye" style="font-size: 48px; color: var(--primary);"></i>
+        <h3 class="mt-3">Our Vision</h3>
+        <p>To be the most trusted healthcare provider, setting standards for medical excellence and patient care.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="about-card text-center">
+        <i class="bi bi-bullseye" style="font-size: 48px; color: var(--primary);"></i>
+        <h3 class="mt-3">Our Mission</h3>
+        <p>To provide compassionate, high-quality healthcare that improves lives and strengthens communities.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="about-card text-center">
+        <i class="bi bi-heart" style="font-size: 48px; color: var(--primary);"></i>
+        <h3 class="mt-3">Our Values</h3>
+        <p>Integrity, compassion, innovation, and excellence in everything we do.</p>
+      </div>
+    </div>
+  </div>
+  
+  <h2 class="text-center mt-5 mb-4">Leadership Team</h2>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Dr. Robert Williams" class="team-img">
+        <div class="team-info">
+          <h5>Dr. Robert Williams</h5>
+          <p class="text-muted">CEO & Medical Director</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Dr. Lisa Anderson" class="team-img">
+        <div class="team-info">
+          <h5>Dr. Lisa Anderson</h5>
+          <p class="text-muted">Chief of Surgery</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Dr. James Miller" class="team-img">
+        <div class="team-info">
+          <h5>Dr. James Miller</h5>
+          <p class="text-muted">Head of Cardiology</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Dr. Sarah Brown" class="team-img">
+        <div class="team-info">
+          <h5>Dr. Sarah Brown</h5>
+          <p class="text-muted">Pediatrics Director</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4"><p>© 2024 deMed Medical Center. All rights reserved.</p></div>
+      <div class="col-lg-4 text-center"><a href="../index.html" style="color: white; text-decoration: none;">Back to Home</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
