@@ -4,99 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Home- Divine-Favour Modern Medical Care</title>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ── TOP INFO BAR ───────────────────────────────── -->
+<!-- TOP NAVBAR  -->
+
+<!-- Top Info Bar -->
 <div class="navbar-top-bar">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap:8px;">
-      <div class="d-flex align-items-center" style="gap:8px;">
-        <i class="bi bi-telephone-fill" style="font-size:12px;"></i>
+    <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 8px;">
+      <div class="d-flex align-items-center flex-wrap" style="gap: 6px;">
+        <i class="bi bi-telephone-fill" style="font-size: 12px;"></i>
         <span>Emergency: <a href="tel:+18000000000"><strong>+1 800 000 0000</strong></a></span>
-        <span class="top-divider d-none d-sm-inline-block"></span>
+        <span class="top-divider"></span>
         <span class="d-none d-sm-inline">
-          <i class="bi bi-clock me-1" style="font-size:11px;"></i>Mon–Sat: 8:00am – 6:00pm
+          <i class="bi bi-clock me-1" style="font-size: 11px;"></i>Mon–Sat: 8:00am – 6:00pm
         </span>
       </div>
-      <div class="d-flex align-items-center" style="gap:6px;">
-        <i class="bi bi-geo-alt-fill" style="font-size:12px;"></i>
+      <div class="d-flex align-items-center" style="gap: 6px;">
+        <i class="bi bi-geo-alt-fill" style="font-size: 12px;"></i>
         <span class="d-none d-md-inline">123 Health Ave, Medical City, NY 10001</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ── MAIN NAVBAR WITH LINKED DROPDOWNS ──────────── -->
-<nav class="main-navbar" id="mainNav">
-  <div class="container h-100 d-flex align-items-center">
-
-    <a class="navbar-brand me-auto" href="index.html">
-      <div class="brand-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+<!-- Main Navigation Bar -->
+<nav class="main-navbar navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Brand / Logo -->
+    <a class="navbar-brand" href="#">
+      <div class="brand-icon">
+        <i class="bi bi-heart-pulse-fill"></i>
+      </div>
       <div class="brand-text">
-        <strong> Divine-Favour</strong>
+        <strong>Divine-Favour</strong>
         <span>Medical Center</span>
       </div>
     </a>
 
-    <button class="navbar-toggler border-0 ms-2 d-lg-none" type="button"
-            data-bs-toggle="collapse" data-bs-target="#mainMenu"
-            aria-controls="mainMenu" aria-expanded="false" aria-label="Menu"
-            style="padding:6px; background:none;">
-      <i class="bi bi-list" style="font-size:26px; color:var(--dark);"></i>
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="mainMenu">
-      <ul class="navbar-nav align-items-lg-center ms-lg-4 gap-0 py-3 py-lg-0">
-        
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <!-- Home Link -->
         <li class="nav-item">
-          <a class="nav-link nav-link-custom active" href="index.html">Home</a>
+          <a class="nav-link nav-link-custom active" href="/index.html">Home</a>
         </li>
         
+        <!-- About Link -->
         <li class="nav-item">
-          <a class="nav-link nav-link-custom" href="#">About</a>
+          <a class="nav-link nav-link-custom" href="/pages/about.html">About</a>
         </li>
 
-        <!-- Services Dropdown with Links -->
+        <!-- Services Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link nav-link-custom dropdown-toggle" href="#"
-             data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Services
+          </a>
           <ul class="dropdown-menu dropdown-menu-custom">
-            <li><a class="dropdown-item" href="pages/medical-checkup.html"><i class="bi bi-heart-pulse me-2 text-primary-brand"></i>Medical Checkup</a></li>
-            <li><a class="dropdown-item" href="pages/emergency-care.html"><i class="bi bi-truck-front me-2 text-primary-brand"></i>Emergency Care</a></li>
+            <li><a class="dropdown-item" href="/pages/medical-checkup.html"><i class="bi bi-heart-pulse"></i>Medical Checkup</a></li>
+            <li><a class="dropdown-item" href="/pages/emergency-care.html"><i class="bi bi-truck-front"></i>Emergency Care</a></li>
+            <li><a class="dropdown-item" href="/pages/insurance.html"><i class="bi bi-shield-check"></i>Insurance</a></li>
+            <li><a class="dropdown-item" href="/pages/appointment.html"><i class="bi bi-calendar-check"></i>Appointment</a></li>
           </ul>
         </li>
 
-        <!-- Pages Dropdown with Links -->
+        <!-- Pages Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link nav-link-custom dropdown-toggle" href="#"
-             data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+          <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Pages
+          </a>
           <ul class="dropdown-menu dropdown-menu-custom">
-            <li><a class="dropdown-item" href="pages/faqs.html"><i class="bi bi-question-circle me-2 text-primary-brand"></i>FAQs</a></li>
-            <li><a class="dropdown-item" href="pages/doctors-staff.html"><i class="bi bi-people me-2 text-primary-brand"></i>Doctors & Staff</a></li>
-            <li><a class="dropdown-item" href="pages/profile.html"><i class="bi bi-person-circle me-2 text-primary-brand"></i>Profile</a></li>
-            <li><a class="dropdown-item" href="pages/blog.html"><i class="bi bi-newspaper me-2 text-primary-brand"></i>Blog</a></li>
-            <li><hr class="dropdown-divider my-1" style="border-color:var(--border);"></li>
-            <li><a class="dropdown-item" href="pages/contact.html"><i class="bi bi-envelope me-2 text-primary-brand"></i>Contact</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-exclamation-triangle me-2 text-primary-brand"></i>404 Error</a></li>
+            <li><a class="dropdown-item" href="/pages/faqs.html"><i class="bi bi-question-circle"></i>FAQs</a></li>
+            <li><a class="dropdown-item" href="/pages/doctors-staff.html"><i class="bi bi-people"></i>Doctors & Staff</a></li>
+            <li><a class="dropdown-item" href="/pages/profile.html"><i class="bi bi-person-circle"></i>Profile</a></li>
+            <li><a class="dropdown-item" href="/pages/blog.html"><i class="bi bi-newspaper"></i>Blog</a></li>
+            <li><hr class="dropdown-divider my-1"></li>
+            <li><a class="dropdown-item" href="/pages/contact.html"><i class="bi bi-envelope"></i>Contact</a></li>
           </ul>
         </li>
-
       </ul>
 
-      <div class="d-flex align-items-center gap-2 ms-lg-auto mt-3 mt-lg-0">
+      <!-- Action Buttons -->
+      <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
         <a href="#" class="nav-cta-login">Log in</a>
         <a href="#" class="nav-cta-signup">Sign Up</a>
       </div>
     </div>
-
   </div>
 </nav>
+
 
 <!-- ── HERO SECTION (same as before) ───────────────── -->
 <section class="hero-section">
@@ -398,5 +406,6 @@
 </footer>
 
 <script src="js/bootstrap.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
