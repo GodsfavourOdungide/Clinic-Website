@@ -13,53 +13,129 @@
 </head>
 <body>
 
-<div class="navbar-top-bar">
-  <div class="container">
-    <div class="d-flex justify-content-between">
-      <div><i class="bi bi-telephone-fill"></i> Emergency: <strong>+1 800 000 0000</strong></div>
-      <div><i class="bi bi-geo-alt-fill"></i> 123 Health Ave, Medical City, NY 10001</div>
-    </div>
-  </div>
-</div>
 
-<nav class="main-navbar">
-  <div class="container h-100 d-flex align-items-center">
-    <a class="navbar-brand me-auto" href="../index.html">
-      <div class="brand-icon"><i class="bi bi-heart-pulse-fill"></i></div>
-      <div class="brand-text"><strong>Divine-Favour</strong><span>Medical Center</span></div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
-      <i class="bi bi-list" style="font-size:26px;"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="mainMenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li><a class="nav-link nav-link-custom" href="../index.html">Home</a></li>
-        <li><a class="nav-link nav-link-custom" href="#">About</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-          <ul class="dropdown-menu dropdown-menu-custom">
-            <li><a class="dropdown-item" href="medical-checkup.html">Medical Checkup</a></li>
-            <li><a class="dropdown-item" href="emergency-care.html">Emergency Care</a></li>
+<!-- Main Navigation Bar -->
+    <nav class="main-navbar navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Brand / Logo -->
+        <a class="navbar-brand" href="#">
+          <div class="brand-icon">
+            <i class="bi bi-heart-pulse-fill"></i>
+          </div>
+          <div class="brand-text">
+            <strong>Divine-Favour</strong>
+            <span>Medical Center</span>
+          </div>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <!-- Home Link -->
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="/index.html"
+                >Home</a
+              >
+            </li>
+
+            <!-- About Link -->
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/pages/about.html"
+                >About</a
+              >
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link nav-link-custom dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu dropdown-menu-custom">
+                <li>
+                  <a class="dropdown-item" href="/pages/medical-checkup.html"
+                    ><i class="bi bi-heart-pulse"></i>Medical Checkup</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/emergency-care.html"
+                    ><i class="bi bi-truck-front"></i>Emergency Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/insurance.html"
+                    ><i class="bi bi-shield-check"></i>Insurance</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/appointment.html"
+                    ><i class="bi bi-calendar-check"></i>Appointment</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Pages Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link nav-link-custom dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu dropdown-menu-custom">
+                <li>
+                  <a class="dropdown-item" href="/pages/faqs.html"
+                    ><i class="bi bi-question-circle"></i>FAQs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/doctors-staff.html"
+                    ><i class="bi bi-people"></i>Doctors & Staff</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/profile.html"
+                    ><i class="bi bi-person-circle"></i>Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/blog.html"
+                    ><i class="bi bi-newspaper"></i>Blog</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider my-1" /></li>
+                <li>
+                  <a class="dropdown-item" href="/pages/contact.html"
+                    ><i class="bi bi-envelope"></i>Contact</a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
-          <ul class="dropdown-menu dropdown-menu-custom">
-            <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
-            <li><a class="dropdown-item" href="doctors-staff.html">Doctors & Staff</a></li>
-            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
-        <a href="#" class="nav-cta-login">Log in</a>
-        <a href="#" class="nav-cta-signup">Sign Up</a>
+
+          <!-- Action Buttons -->
+          <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+            <a href="#" class="nav-cta-login">Log in</a>
+            <a href="#" class="nav-cta-signup">Sign Up</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
 <section class="page-header">
   <div class="container text-center">
