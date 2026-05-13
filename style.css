@@ -45,10 +45,11 @@
       text-decoration: none;
     }
     
+    /* Brand-Images Logo is named brand-icon */
     .brand-icon {
       width: 40px;
       height: 40px;
-      background: var(--primary);
+      background: var(--light);
       border-radius: 10px;
       display: flex;
       align-items: center;
