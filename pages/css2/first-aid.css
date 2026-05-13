@@ -107,7 +107,7 @@ h4,
 .brand-icon {
   width: 40px;
   height: 40px;
-  background: var(--primary);
+  background: var(--white);
   border-radius: 10px;
   display: flex;
   align-items: center;
